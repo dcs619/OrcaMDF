@@ -51,7 +51,7 @@ namespace OrcaMDF.Core.MetaData.DMVs
 							IndexID = rs.idminor,
 							PartitionNumber = rs.numpart,
 							HobtID = rs.rowsetid,
-							Rows = 0, // TODO
+							Rows = rs.rcrows,
 							FilestreamFilegroupID = rs.fgidfs,
 							DataCompression = rs.cmprlevel,
 							DataCompressionDesc = db.BaseTables.syspalvalues
